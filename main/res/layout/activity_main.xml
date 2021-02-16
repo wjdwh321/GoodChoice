@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.testgc2.MapsActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@android:color/holo_orange_dark"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/goodchoice_logo" />
+
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/slide">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="오늘 뭐 먹지?"
+                android:textSize="40dp"
+                android:textStyle="bold"/>
+
+            <view
+                android:id="@+id/view"
+                class="android.support.v4.view.ViewPager"
+                android:layout_width="wrap_content"
+                android:layout_height="280dp"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="110dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="StartClick"
+                android:text="시작하기"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
